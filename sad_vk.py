@@ -56,7 +56,7 @@ for event in longpoll.listen():
                     otvet = int(text)
                 except:
                     if text == "выйти":
-                    del gamers[user_id]
+                        del gamers[user_id]
                     else:
                         send_message(user_id,"ты чё, продолжай играть." game_over_keyboard)
                     continue
