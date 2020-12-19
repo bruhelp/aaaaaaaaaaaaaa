@@ -1,1 +1,2 @@
-worker: python sad_vk
+worker: python sad_vk.py
+
