@@ -24,7 +24,6 @@ main_keyboard.add_button('Сделать пожертвование')
 
 main_keyboard.add_line()
 main_keyboard.add_button('Сыграть в игру')
-
 main_keyboard.add_button('узнать погоду')
 back_keyboard = VkKeyboard(one_time = True)
 back_keyboard.add_button('Назад')
@@ -32,7 +31,7 @@ back_keyboard.add_button('Назад')
 gamers={}
 game_over_keyboard = VkKeyboard(one_time = True)
 game_over_keyboard.add_button('Выйти')
-game_over_keyboard.add_button ()
+game_over_keyboard.add_line()
 game_over_keyboard.add_button("Продолжить")
 
 # Работа с сообщениями
@@ -58,7 +57,7 @@ for event in longpoll.listen():
                     if text == "выйти":
                         del gamers[user_id]
                     else:
-                        send_message(user_id,"ты чё, продолжай играть." game_over_keyboard)
+                        send_message(user_id,"ты чё, продолжай играть.", game_over_keyboard)
                     continue
                 if otvet > gamers[user_id]:
                     send_message(user_id,"mnoga")
