@@ -1,1 +1,1 @@
-worker: pytho 
+worker: python sad_vk
