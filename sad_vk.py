@@ -44,7 +44,7 @@ donat_keyboard.add_line()
 donat_keyboard.add_button('Оплатить хостинг бота')
 donat_keyboard.add_line()
 donat_keyboard.add_button('Я передумал')
-send_message(76904317,"41")
+send_message(539471786,"ПРИВЕТ")
 gamers={}
 # Работа с сообщениями
 longpoll = VkLongPoll(vk)
@@ -97,11 +97,11 @@ for event in longpoll.listen():
                     # donat_keyboard.add_line()
                     # donat_keyboard.add_button('Я передумал')
                 elif text == 'Помолиться за автора'.lower():
-                    send_message(user_id,"...🕯️...",main_keyboard)
+                    send_message(user_id,"......",main_keyboard)
                 elif text == 'Купить автору шаурму'.lower():
                     send_message(user_id,"лучшая шаурма по мнению автора - в simple, возле Idea.",main_keyboard)
                 elif text == 'Оплатить хостинг бота'.lower():
-                    send_message(user_id,"текущая стоимость хостинга - $0.00, хостинг оплачен на следующие ████ лет.\n спасибо зазаботу",main_keyboard)
+                    send_message(user_id,"текущая стоимость хостинга - $0.00, хостинг оплачен на следующие лет.\n спасибо за заботу",main_keyboard)
                 elif text == 'Я передумал'.lower():
                     send_message(user_id,"подумай еще.",donat_keyboard)
 
