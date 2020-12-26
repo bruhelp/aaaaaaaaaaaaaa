@@ -98,7 +98,7 @@ for event in longpoll.listen():
                     # donat_keyboard.add_button('Я передумал')
                 elif text == 'Помолиться за автора'.lower():
                     send_message(user_id,"...м и н у т а  м о л ч а н и я...",main_keyboard)
-                elif text == 'Купить автору мороженку'.lower():
+                elif text == 'купить автору мороженку.'.lower():
                     send_message(user_id,"По секрету: Автор любит мороженое с киви в Радеже :3", main_keyboard)
                 elif text == 'Оплатить хостинг бота'.lower():
                     send_message(user_id,"текущая стоимость хостинга - $0.00, хостинг оплачен на следующие несколько лет.\n спасибо за заботу <3", main_keyboard)
