@@ -37,13 +37,13 @@ game_over_keyboard.add_line()
 game_over_keyboard.add_button('Продолжить(просто введи число)')
 
 donat_keyboard = VkKeyboard(one_time = True)    #<1=====
-donat_keyboard.add_button('Помолиться за автора')
+donat_keyboard.add_button('помолиться за автора.')
 donat_keyboard.add_line()
-donat_keyboard.add_button('Купить автору шаурму')
+donat_keyboard.add_button('купить автору мороженку.')
 donat_keyboard.add_line()
-donat_keyboard.add_button('Оплатить хостинг бота')
+donat_keyboard.add_button('оплатить хостинг бота.')
 donat_keyboard.add_line()
-donat_keyboard.add_button('Я передумал')
+donat_keyboard.add_button('йа передумал.')
 send_message(539471786, 'обернись.')
 gamers={}
 # Работа с сообщениями
