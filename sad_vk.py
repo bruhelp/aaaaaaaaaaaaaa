@@ -21,9 +21,9 @@ start_keyboard.add_button('NOT START')
 
 main_keyboard = VkKeyboard(one_time = True)
 main_keyboard.add_button('Об авторе')
-main_keyboard.add_button('Сделать пожертвование')
+main_keyboard.add_button('сделать пожертвование')
 main_keyboard.add_line()
-main_keyboard.add_button('Сыграть в игру')
+main_keyboard.add_button('игрушка')
 
 main_keyboard.add_button('узнать погоду')
 
