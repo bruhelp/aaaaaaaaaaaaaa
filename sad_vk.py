@@ -80,13 +80,13 @@ for event in longpoll.listen():
                     send_message(user_id,"Добро пожаловать",main_keyboard)
                     #asdasd
                 elif text == 'Об авторе'.lower():
-                    send_message(user_id,"Damir",back_keyboard)
+                    send_message(user_id,"Не Дамир, отвечаю",back_keyboard)
                 elif text == 'Сделать пожертвование'.lower():
                     send_message(user_id,"Выберите тип пожертвования",donat_keyboard)
                 elif text == 'Сыграть в игру'.lower():
                     from random import randint
-                    gamers[user_id] = randint(1,9000)
-                    send_message(user_id,"угадывай")
+                    gamers[user_id] = randint(1,10000)
+                    send_message(user_id,"угадывай с 1 до 10000")
                 elif text == 'узнать погоду'.lower():
                     send_message(user_id,"ясно",back_keyboard)
                     # donat_keyboard.add_button('Помолиться за автора')
@@ -97,11 +97,11 @@ for event in longpoll.listen():
                     # donat_keyboard.add_line()
                     # donat_keyboard.add_button('Я передумал')
                 elif text == 'Помолиться за автора'.lower():
-                    send_message(user_id,"......",main_keyboard)
+                    send_message(user_id,"...м и н у т а  м о л ч а н и я...",main_keyboard)
                 elif text == 'Купить автору мороженку'.lower():
                     send_message(user_id,"По секрету: Автор любит мороженое с киви в Радеже :3", main_keyboard)
                 elif text == 'Оплатить хостинг бота'.lower():
-                    send_message(user_id,"текущая стоимость хостинга - $0.00, хостинг оплачен на следующие несколько лет.\n спасибо за заботу", main_keyboard)
+                    send_message(user_id,"текущая стоимость хостинга - $0.00, хостинг оплачен на следующие несколько лет.\n спасибо за заботу <3", main_keyboard)
                 elif text == 'Я передумал'.lower():
                     send_message(user_id,"автор будет ждать. обернись.\n шучу.",donat_keyboard)
 
