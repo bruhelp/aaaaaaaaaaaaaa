@@ -83,7 +83,7 @@ for event in longpoll.listen():
                     send_message(user_id,"Не Дамир, отвечаю",back_keyboard)
                 elif text == 'Сделать пожертвование'.lower():
                     send_message(user_id,"Выберите тип пожертвования",donat_keyboard)
-                elif text == 'Сыграть в игру'.lower():
+                elif text == 'игрушка'.lower():
                     from random import randint
                     gamers[user_id] = randint(1,10000)
                     send_message(user_id,"угадывай с 1 до 10000")
